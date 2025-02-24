@@ -9,7 +9,7 @@ df = create_example()
 
 df.to_sql(
     'lanchonete',
-    conn,
+    ct_db,
     if_exists='replace',
     index = False
 )
@@ -22,5 +22,5 @@ query = """
 
 pd.read_sql(
     query,
-    conn
+    ct_db
 )
