@@ -37,3 +37,5 @@ INNER JOIN cars ON client.client_id = cars.clients_id
 inner_join_df = pd.read_sql(query_inner, conn)
 print("INNER JOIN:")
 print(inner_join_df)
+
+###############
